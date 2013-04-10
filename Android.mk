@@ -55,7 +55,7 @@ LOCAL_SHARED_LIBRARIES += libbcc libbcinfo libui libgui libsync
 
 LOCAL_C_INCLUDES += frameworks/compile/libbcc/include
 
-LOCAL_CFLAGS += $(rs_base_CFLAGS) -Qunused-arguments
+LOCAL_CFLAGS += $(rs_base_CFLAGS) -Qunused-arguments -Wno-unknown-warning-option
 
 LOCAL_LDLIBS := -lpthread -ldl
 LOCAL_MODULE_TAGS := optional
